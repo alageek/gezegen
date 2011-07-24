@@ -11,6 +11,22 @@
         <script src="/static/js/less.js" type="text/javascript"></script>
     </head>
     <body>
-        {% block content %}{% endblock %}
+        <div id="header">
+            <div class="container">
+                <div class="span-24 last">
+                    <h1>Pythontr Planet</h1>
+                    <p>kafadan silinir, buradan silinmez</p>
+                </div>
+            </div>
+        </div>
+        <div class="container prepend-top">
+            <div class="span-20">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="span-4 last" id="sidebar">
+                this is sidebar.
+            </div>
+        </div>
+
     </body>
 </html>
