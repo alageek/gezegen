@@ -3,3 +3,15 @@
 {% block content %}
 {{ welcome }}
 {% endblock %}
+
+
+{% block sidebar %}
+<h3>Yazarlar</h3>
+<ul>
+    {% for subcription in subcriptions %}
+    <li>
+        <a href="{{ subcription.url }}">{{ subcription.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

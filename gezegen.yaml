@@ -1,0 +1,12 @@
+subscriptions:
+- name: Gökmen Görgen
+  url: http://gokmengorgen.net
+  feed_url: http://gokmengorgen.net/post/feeds/rss/python
+  avatar_url: http://www.gravatar.com/avatar/6f7a1ffc3958a51fcbf41ecc131e4322.png
+  email: gokmen@alageek.com
+
+- name: Mirat Can Bayrak
+  url: http://miratcanbayrak.blogspot.com
+  feed_url: http://www.miratcanbayrak.blogspot.com/feeds/posts/default/-/python
+  avatar_url: https://lh5.googleusercontent.com/-toHCAfLRVZY/AAAAAAAAAAI/AAAAAAAABuU/lO8ZmMI4jtM/photo.jpg
+  email: miratcanbayrak@gmail.com
