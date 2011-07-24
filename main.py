@@ -13,7 +13,7 @@ class MainHandler(TemplateView):
         subscriptions = get_config().get('subscriptions')
         template_values = {
             'welcome': 'Welcome, user.',
-            'subcriptions': subscriptions
+            'subscriptions': subscriptions
         }
 
         return template_values

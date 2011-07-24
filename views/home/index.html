@@ -7,10 +7,13 @@
 
 {% block sidebar %}
 <h3>Yazarlar</h3>
-<ul>
-    {% for subcription in subcriptions %}
+<ul class="subscriptions">
+    {% for subscription in subscriptions %}
     <li>
-        <a href="{{ subcription.url }}">{{ subcription.name }}</a>
+        <a href="{{ subscription.url }}">
+            <img src="{{ subscription.avatar_url }}" width="30" height="30" title="{{ subscription.name }}" />
+            <span>{{ subscription.name }}</span>
+        </a>
     </li>
     {% endfor %}
 </ul>
