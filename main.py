@@ -1,27 +1,6 @@
-import os
-from google.appengine.ext import webapp
-from google.appengine.ext.webapp import template
+from google.appengine.ext.webapp import WSGIApplication
 from google.appengine.ext.webapp import util
-
-class TemplateView(webapp.RequestHandler):
-
-    template_name = None
-    template_path = os.path.join(os.path.dirname(__file__), 'views')
-
-    def get_template(self):
-        try:
-            return os.path.join(self.template_path, '%s.html' % self.template_name)
-        except AttributeError:
-            return None
-
-    def get_template_values(self):
-        return {}
-
-    def get(self):
-        context = template.render(self.get_template(), self.get_template_values())
-
-        self.response.out.write(context)
-
+from lib.views import TemplateView
 
 class MainHandler(TemplateView):
 
@@ -36,8 +15,11 @@ class MainHandler(TemplateView):
 
 
 def main():
-    application = webapp.WSGIApplication([('/', MainHandler)],
-                                         debug=True)
+    application = WSGIApplication(
+        [('/', MainHandler)],
+        debug=True
+    )
+
     util.run_wsgi_app(application)
 
 
