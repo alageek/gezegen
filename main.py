@@ -3,6 +3,7 @@ from google.appengine.ext.webapp import WSGIApplication
 from google.appengine.ext.webapp import util
 from lib.views import TemplateView
 from lib.utils import get_config
+from models.home import Feed
 
 
 class MainHandler(TemplateView):
@@ -11,8 +12,9 @@ class MainHandler(TemplateView):
 
     def get_template_values(self):
         subscriptions = get_config().get('subscriptions')
+        feeds = db.GqlQuery('SELECT * FROM Feed ORDER BY date')
         template_values = {
-            'welcome': 'Welcome, user.',
+            'feeds': feeds,
             'subscriptions': subscriptions
         }
 

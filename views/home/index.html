@@ -1,7 +1,19 @@
 {% extends "../layout.html" %}
 
 {% block content %}
-{{ welcome }}
+{% for feed in feeds %}
+<div class="entry append-bottom">
+    <h3>
+        <a href="{{ feed.url }}">
+            {{ feed.title }}
+        </a>
+    </h3>
+    <div class="meta">
+        <span class="datetime">{{ feed.date|date:"d F Y" }}</span>
+        <span class="author">{{ feed.author }}</span>
+    </div>
+</div>
+{% endfor %}
 {% endblock %}
 
 
