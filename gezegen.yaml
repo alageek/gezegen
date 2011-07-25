@@ -1,4 +1,9 @@
 subscriptions:
+- name: Cihan Okyay
+  url: http://cihanokyay.wordpress.com
+  feed_url: http://cihanokyay.wordpress.com/category/python/feed
+  avatar_url: https://lh5.googleusercontent.com/-OUYRqCo3tnY/TgxghpDi9OI/AAAAAAAAAtA/tRBEGdqOYec/nargile.jpg
+
 - name: Gökmen Görgen
   url: http://gokmengorgen.net
   feed_url: http://gokmengorgen.net/post/feeds/rss/python
@@ -13,6 +18,16 @@ subscriptions:
   url: http://pythonzede.blogspot.com
   feed_url: http://pythonzede.blogspot.com/feeds/posts/default/-/python
   avatar_url: http://www.gravatar.com/avatar/f21d78cecd29a7d55fc4b805d90f4bf2?s=30
+
+# - name: Ömer Sinan Ağacan
+#   url: http://osa1.net
+#   feed_url: http://osa1.net/feed/python
+#   avatar_url: http://www.gravatar.com/avatar/04fa8b0cca5a7dfef2d281be67a2b7a2.png?s=30
+
+# - name: Şahin Mersin
+#   url: http://pythontr.org
+#   feed_url: http://www.pythontr.org/rss/makale
+#   avatar_url: http://media.linkedin.com/mpr/pub/image-Kho8NbCCDLE8KGbXMWHYNTN-7wxnKGGXLg3DNhmUsLtqzdyk/%C5%9Fahin-mersin.jpg
 
 # - name: Metehan Özbek
 #   url: http://www.metehan.us
