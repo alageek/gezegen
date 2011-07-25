@@ -1,0 +1,4 @@
+cron:
+- description: update feeds
+  url: /tasks/update
+  schedule: every 30 minutes

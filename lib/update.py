@@ -1,6 +1,6 @@
-import feedparser
 from datetime import datetime
 from time import mktime
+from lib import feedparser
 from lib.utils import get_config
 from models.home import Feed
 
