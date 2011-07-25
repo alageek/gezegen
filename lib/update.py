@@ -23,7 +23,11 @@ class UpdateFeeds:
             result = feedparser.parse(subscription['feed_url'])
 
             for entry in result.entries:
-                date = datetime.fromtimestamp(mktime(entry.updated_parsed))
+                try:
+                    date = datetime.fromtimestamp(mktime(entry.updated_parsed))
+                except AttributeError:
+                    date = datetime.fromtimestamp(mktime(result['feed']['updated_parsed']))
+
                 feed = Feed(
                     author=subscription['name'],
                     title=entry.title,
