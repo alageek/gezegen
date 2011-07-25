@@ -2,7 +2,7 @@
 
 {% block content %}
 {% for feed in feeds %}
-<div class="entry append-bottom">
+<div class="entry">
     <h3>
         <a href="{{ feed.url }}">
             {{ feed.title }}
@@ -12,8 +12,12 @@
         <span class="datetime">{{ feed.date|date:"d F Y" }}</span>
         <span class="author">{{ feed.author }}</span>
     </div>
+    <div class="content prepend-top">
+        {{ feed.content }}
+    </div>
 </div>
 {% endfor %}
+<br />
 {% endblock %}
 
 

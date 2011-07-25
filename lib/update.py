@@ -23,6 +23,7 @@ class UpdateFeeds:
                     author=subscription['name'],
                     title=entry.title,
                     date=date,
+                    content=entry.summary,
                     url = entry.link
                 )
                 feed.put()

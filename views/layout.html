@@ -7,10 +7,12 @@
         <!--[if lt IE 8]>
             <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection">
         <![endif]-->
+        <link href="/static/css/prettify.css" type="text/css" rel="stylesheet" />
         <link rel="stylesheet/less" type="text/css" href="/static/less/gezegen.less">
         <script src="/static/js/less.js" type="text/javascript"></script>
+        <script src="/static/js/prettify.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="prettyPrint()">
         <div id="header">
             <div class="container">
                 <div class="span-24 last">
@@ -20,10 +22,10 @@
             </div>
         </div>
         <div class="container prepend-top">
-            <div class="span-17" id="content">
+            <div class="span-18" id="content">
                 {% block content %}{% endblock %}
             </div>
-            <div class="span-7 last" id="sidebar">
+            <div class="span-6 last" id="sidebar">
                 <h3>Beslenme Çantası</h3>
                 <blockquote>....Programlama dili öğrenmenin “bence” en kolay yolu, konuşma dilinde de olduğu gibi, sürekli okumaktır; kod okumak. Anlamasak bile okumak, merak ettiğimiz yerleri bilen birilerine sormak vesaire. Aynı zamanda, programlama dili öğrenmek için, tıpki konuşma dilinde olduğu gibi bir çevreye ihtiyacınız vardır. Nasıl ki, İngilizce’yi en iyi, İngilizce konuşan bir toplumda öğrenebiliyorsak; programlama dili için de aynı şey geçerli. Bu dili öğrenmenin en güzel yeri de burası olabilir...</blockquote>
                 {% block sidebar %}{% endblock %}
