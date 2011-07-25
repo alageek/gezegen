@@ -3,19 +3,16 @@ subscriptions:
   url: http://gokmengorgen.net
   feed_url: http://gokmengorgen.net/post/feeds/rss/python
   avatar_url: http://www.gravatar.com/avatar/6f7a1ffc3958a51fcbf41ecc131e4322.png
-  email: gokmen@alageek.com
 
 - name: Mirat Can Bayrak
   url: http://miratcanbayrak.blogspot.com
   feed_url: http://www.miratcanbayrak.blogspot.com/feeds/posts/default/-/python
   avatar_url: https://lh5.googleusercontent.com/-toHCAfLRVZY/AAAAAAAAAAI/AAAAAAAABuU/lO8ZmMI4jtM/photo.jpg
-  email: miratcanbayrak@gmail.com
 
 - name: Mustafa Yetiş
   url: http://pythonzede.blogspot.com
   feed_url: http://pythonzede.blogspot.com/feeds/posts/default/-/python
   avatar_url: http://www.gravatar.com/avatar/f21d78cecd29a7d55fc4b805d90f4bf2?s=30
-  email: yetis.m@gmail.com
 
 # - name: Metehan Özbek
 #   url: http://www.metehan.us
