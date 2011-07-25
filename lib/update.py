@@ -12,8 +12,13 @@ class UpdateFeeds:
 
         self.run()
 
+    def delete_old_feeds(self):
+        for f in Feed.all():
+            f.delete()
 
     def run(self):
+        self.delete_old_feeds()
+
         for subscription in self.config['subscriptions']:
             result = feedparser.parse(subscription['feed_url'])
 
