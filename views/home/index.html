@@ -26,6 +26,10 @@
 <ul class="subscriptions">
     {% for subscription in subscriptions %}
     <li>
+        <a href="{{ subscription.feed_url }}">
+            <img class="rss-button" src="/static/img/rss.png" />
+        </a>
+
         <a href="{{ subscription.url }}">
             <img src="{{ subscription.avatar_url }}" width="30" height="30" title="{{ subscription.name }}" />
             <span>{{ subscription.name }}</span>
