@@ -26,15 +26,16 @@ class UpdateFeeds:
                 try:
                     date = datetime.fromtimestamp(mktime(entry.updated_parsed))
                 except AttributeError:
-                    date = datetime.fromtimestamp(mktime(result['feed']['updated_parsed']))
+                    date = datetime.fromtimestamp(
+                        mktime(result['feed']['updated_parsed']))
 
                 feed = Feed(
                     author=subscription['name'],
                     title=entry.title,
                     date=date,
                     content=entry.summary,
-                    url = entry.link
-                )
+                    url=entry.link)
+
                 feed.put()
 
 if __name__ == '__main__':
