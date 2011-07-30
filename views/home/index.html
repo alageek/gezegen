@@ -6,18 +6,18 @@
 </a>
 {% for feed in feeds %}
 <div class="entry">
-    <h3>
-        <a href="{{ feed.url }}">
-            {{ feed.title }}
-        </a>
-    </h3>
-    <div class="meta">
-        <span class="datetime">{{ feed.date|date:"d F Y" }}</span>
-        <span class="author">{{ feed.author }}</span>
-    </div>
-    <div class="content prepend-top">
-        {{ feed.content }}
-    </div>
+  <h3>
+    <a href="{{ feed.url }}">
+      {{ feed.title }}
+    </a>
+  </h3>
+  <div class="meta">
+    <span class="datetime">{{ feed.date|date:"d F Y" }}</span>
+    <span class="author">{{ feed.author }}</span>
+  </div>
+  <div class="content prepend-top">
+    {{ feed.content }}
+  </div>
 </div>
 {% endfor %}
 <br />
@@ -25,19 +25,23 @@
 
 
 {% block sidebar %}
-<h3>Yazarlar</h3>
-<ul class="subscriptions">
-    {% for subscription in subscriptions %}
-    <li>
-        <a href="{{ subscription.feed_url }}">
-            <img class="rss-button" src="/static/img/rss.png" />
-        </a>
-
-        <a href="{{ subscription.url }}">
-            <img src="{{ subscription.avatar_url }}" width="30" height="30" title="{{ subscription.name }}" />
-            <span>{{ subscription.name }}</span>
-        </a>
-    </li>
-    {% endfor %}
-</ul>
-{% endblock %}
+<div class="widget">
+  <h3 class="title">Yazarlar</h3>
+  <div class="content">
+    <ul class="subscriptions">
+      {% for subscription in subscriptions %}
+      <li>
+	<a href="{{ subscription.feed_url }}">
+	  <img class="rss-button" src="/static/img/rss.png" />
+	</a>
+	
+	<a href="{{ subscription.url }}">
+	  <img src="{{ subscription.avatar_url }}" width="30" height="30" title="{{ subscription.name }}" />
+	  <span>{{ subscription.name }}</span>
+	</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+  {% endblock %}

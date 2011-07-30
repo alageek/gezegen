@@ -1,13 +1,13 @@
 subscriptions:
-- name: Bahadır Kandemir
-  url: http://pardus.co
-  feed_url: http://pardus.co/?tag=python&feed=rss
-  avatar_url: http://gravatar.com/avatar/fb15c4e1e64cab22974f02404a4419be?s=30
+#- name: Bahadır Kandemir
+#  url: http://pardus.co
+#  feed_url: http://pardus.co/?tag=python&feed=rss
+#  avatar_url: http://gravatar.com/avatar/fb15c4e1e64cab22974f02404a4419be?s=30
 
-- name: Cihan Okyay
-  url: http://cihanokyay.wordpress.com
-  feed_url: http://cihanokyay.wordpress.com/category/python/feed
-  avatar_url: https://lh5.googleusercontent.com/-OUYRqCo3tnY/TgxghpDi9OI/AAAAAAAAAtA/tRBEGdqOYec/nargile.jpg
+#- name: Cihan Okyay
+#  url: http://cihanokyay.wordpress.com
+#  feed_url: http://cihanokyay.wordpress.com/category/python/feed
+#  avatar_url: https://lh5.googleusercontent.com/-OUYRqCo3tnY/TgxghpDi9OI/AAAAAAAAAtA/tRBEGdqOYec/nargile.jpg
 
 - name: Gökmen Görgen
   url: http://gokmengorgen.net
@@ -19,10 +19,10 @@ subscriptions:
   feed_url: http://www.miratcanbayrak.blogspot.com/feeds/posts/default/-/python
   avatar_url: https://lh5.googleusercontent.com/-toHCAfLRVZY/AAAAAAAAAAI/AAAAAAAABuU/lO8ZmMI4jtM/photo.jpg
 
-- name: Mustafa Yetiş
-  url: http://pythonzede.blogspot.com
-  feed_url: http://pythonzede.blogspot.com/feeds/posts/default/-/python
-  avatar_url: http://www.gravatar.com/avatar/f21d78cecd29a7d55fc4b805d90f4bf2?s=30
+#- name: Mustafa Yetiş
+#  url: http://pythonzede.blogspot.com
+#  feed_url: http://pythonzede.blogspot.com/feeds/posts/default/-/python
+#  avatar_url: http://www.gravatar.com/avatar/f21d78cecd29a7d55fc4b805d90f4bf2?s=30
 
 # - name: Ömer Sinan Ağacan
 #  url: http://osa1.net
