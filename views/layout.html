@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>PythonTr Planet</title>
-        <link rel="stylesheet" href="/static/css/blueprint/screen.css" type="text/css" media="screen, projection">
-        <link rel="stylesheet" href="/static/css/blueprint/print.css" type="text/css" media="print">
-        <!--[if lt IE 8]>
-            <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <head>
+    <title>Python Gezegeni</title>
+    <link rel="stylesheet" href="/static/css/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/static/css/blueprint/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection">
         <![endif]-->
-        <link href="/static/css/prettify.css" type="text/css" rel="stylesheet" />
-        <link rel="stylesheet/less" type="text/css" href="/static/less/gezegen.less">
-        <script src="/static/js/less.js" type="text/javascript"></script>
-        <script src="/static/js/prettify.js" type="text/javascript"></script>
-    </head>
-    <body onload="prettyPrint()">
-        <div id="header">
-            <div class="container">
-                <div class="span-24 last">
-                    <h1>Pythontr Gezegen</h1>
-                    <p>kafadan silinir, buradan silinmez</p>
-                </div>
-            </div>
+    <link href="/static/css/prettify.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet/less" type="text/css" href="/static/less/gezegen.less">
+    <script src="/static/js/less.js" type="text/javascript"></script>
+    <script src="/static/js/prettify.js" type="text/javascript"></script>
+  </head>
+  <body onload="prettyPrint()">
+    <div id="header">
+      <div class="container">
+        <div class="span-24 last">
+          <h1>Python Gezegeni</h1>
+          <p>kafadan silinir, buradan silinmez</p>
         </div>
-        <div class="container prepend-top">
-            <div class="span-18" id="content">
-                {% block content %}{% endblock %}
-            </div>
-            <div class="span-6 last" id="sidebar">
-                <h3>Beslenme Çantası</h3>
-                <blockquote>....Programlama dili öğrenmenin “bence” en kolay yolu, konuşma dilinde de olduğu gibi, sürekli okumaktır; kod okumak. Anlamasak bile okumak, merak ettiğimiz yerleri bilen birilerine sormak vesaire. Aynı zamanda, programlama dili öğrenmek için, tıpki konuşma dilinde olduğu gibi bir çevreye ihtiyacınız vardır. Nasıl ki, İngilizce’yi en iyi, İngilizce konuşan bir toplumda öğrenebiliyorsak; programlama dili için de aynı şey geçerli. Bu dili öğrenmenin en güzel yeri de burası olabilir...</blockquote>
-                {% block sidebar %}{% endblock %}
-                <h4>Bir takım haklar saklıdır</h4>
-                <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
-                    <img src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" />
-                </a>
-            </div>
-        </div>
+      </div>
+    </div>
+    <div class="container prepend-top">
+      <div class="span-18" id="content">
+        {% block content %}{% endblock %}
+      </div>
+      <div class="span-6 last" id="sidebar">
+	<div class="widget">
+          <h3 class="title">Beslenme Çantası</h3>
+	  <div class="content">
+        <blockquote>....Programlama dili öğrenmenin “bence” en kolay yolu, konuşma dilinde de olduğu gibi, sürekli okumaktır; kod okumak. Anlamasak bile okumak, merak ettiğimiz yerleri bilen birilerine sormak vesaire. Aynı zamanda, programlama dili öğrenmek için, tıpki konuşma dilinde olduğu gibi bir çevreye ihtiyacınız vardır. Nasıl ki, İngilizce’yi en iyi, İngilizce konuşan bir toplumda öğrenebiliyorsak; programlama dili için de aynı şey geçerli. Bu dili öğrenmenin en güzel yeri de burası olabilir...</blockquote>
+	  </div>
+	</div>
+        {% block sidebar %}{% endblock %}
+        <h4>Bir takım haklar saklıdır</h4>
+        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+          <img src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" />
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24753987-1']);
+      _gaq.push(['_trackPageview']);
 
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-24753987-1']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-    </body>
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+  </body>
 </html>

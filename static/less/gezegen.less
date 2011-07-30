@@ -1,17 +1,33 @@
+@background:#8aa366;
+@body:darken(@entrybg, 60%);
+@entrybg:#958e81;
+@titles:lighten(@entrybg, 30%);
+@titlebg:#293d5a;
+
 body {
-    background-color: #080810;
-    color: #fff;
+    background-color: darken(@background, 6%);
+    color: @body;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #fff;
+h1 {
+   color: @titles;
+   margin-bottom: 0.5em;
+}
+
+h2, h3, h4, h5, h6 {
+    color: @titles;
+    background: @titlebg;
+    padding:5px;
+    margin-bottom: 0.5em;
+}
+
+a {
+  color:lighten(@titles, 20%);
 }
 
 #header {
-    padding: 20px 0 5px 0;
-    background-color: #101016;
-    border-bottom: 1px solid #333;
-    height: 38px;
+    padding: 20px 0 0 0;
+    height: 44px;
 
     h1, p {
         display: inline;
@@ -25,7 +41,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #content {
     font-size: 14px;
-
     pre.prettyprint, code.prettyprint {
         padding: 10px;
         border: 1px solid #222;
@@ -38,13 +53,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     h3 {
-        margin: 0;
-
+        margin: 10px 0 5px 0;
         a {
             padding: 0 0 5px 0;
             text-decoration: none;
             display: block;
-            color: #ddd;
+            color: inherit;
 
             &:hover {
                 color: #fff;
@@ -60,20 +74,30 @@ h1, h2, h3, h4, h5, h6 {
 
     .entry {
         margin: 0 10px 30px 0;
-        padding: 5px 10px;
-        border: 1px solid #555;
+        padding: 5px 0;
+	color:inherit;
+	background: @entrybg;
+	border: 5px solid darken(@entrybg, 20%);
+	border-radius:10px;
+	.content {
+	    padding:10px;
+	}
     }
 
     .meta {
+    	padding:0 10px;
         border-bottom: 1px solid #555;
     }
 }
 
 #sidebar {
+    .widget {
+    	margin-bottom:20px;
+    }
     blockquote {
         margin: 0 0 20px 0;
         text-align: justify;
-    }
+	color:@titles    }
 
     h4 {
         margin: 5px 0;
@@ -92,11 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 
     ul {
         &.subscriptions {
-            margin: 20px 0;
+            margin: 0;
             padding: 0;
             list-style-type: none;
-            border-top: 1px solid #222;
-
             a {
                 text-decoration: none;
             }
@@ -106,9 +128,6 @@ h1, h2, h3, h4, h5, h6 {
                 line-height: 40px;
             }
 
-            li {
-                border-bottom: 1px solid #222;
-            }
         }
     }
 }
