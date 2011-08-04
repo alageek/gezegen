@@ -79,7 +79,7 @@ class UpdateFeeds:
                     entry_on_db = Feed(
                         author=subscription['name'],
                         title=entry.title,
-                        date=date,
+                        date=entry.date,
                         content=entry.summary,
                         url=entry.link)
                     # Put it to database ^_^
