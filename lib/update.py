@@ -75,7 +75,7 @@ class UpdateFeeds:
                         # easy to read
                         pass
                 else:
-                    # If not ex,sts , create a new one
+                    # If not exists , create a new one
                     entry_on_db = Feed(
                         author=subscription['name'],
                         title=entry.title,
