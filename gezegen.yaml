@@ -19,6 +19,11 @@ subscriptions:
   feed_url: http://www.miratcanbayrak.blogspot.com/feeds/posts/default/-/python
   avatar_url: https://lh5.googleusercontent.com/-toHCAfLRVZY/AAAAAAAAAAI/AAAAAAAABuU/lO8ZmMI4jtM/photo.jpg
 
+- name: Yaşar Arabacı
+  url: http://yasar.serveblog.net/
+  feed_url: http://yasar.serveblog.net/tag/python/rss/
+  avatar_url: http://www.gravatar.com/avatar/c56f1eac6c5b31b32bdffa4f741f3aed.png
+
 #- name: Mustafa Yetiş
 #  url: http://pythonzede.blogspot.com
 #  feed_url: http://pythonzede.blogspot.com/feeds/posts/default/-/python
