@@ -1,13 +1,13 @@
 subscriptions:
-- name: Bahadır Kandemir
-  url: http://pardus.co
-  feed_url: http://pardus.co/?tag=python&feed=rss
-  avatar_url: http://gravatar.com/avatar/fb15c4e1e64cab22974f02404a4419be?s=30
+#- name: Bahadır Kandemir
+#  url: http://pardus.co
+#  feed_url: http://pardus.co/?tag=python&feed=rss
+#  avatar_url: http://gravatar.com/avatar/fb15c4e1e64cab22974f02404a4419be?s=30
 
-- name: Cihan Okyay
-  url: http://okyay.org/blog/
-  feed_url: http://okyay.org/blog/?category=python&feed=rss2
-  avatar_url: https://lh5.googleusercontent.com/-OUYRqCo3tnY/TgxghpDi9OI/AAAAAAAAAtA/tRBEGdqOYec/nargile.jpg
+#- name: Cihan Okyay
+#  url: http://okyay.org/blog/
+#  feed_url: http://okyay.org/blog/?category=python&feed=rss2
+#  avatar_url: https://lh5.googleusercontent.com/-OUYRqCo3tnY/TgxghpDi9OI/AAAAAAAAAtA/tRBEGdqOYec/nargile.jpg
 
 - name: Gökmen Görgen
   url: http://gokmengorgen.net
